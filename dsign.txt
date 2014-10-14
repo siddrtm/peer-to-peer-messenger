@@ -1,0 +1,46 @@
+purely distributed peer to peer social network
+
+
+peer to peer social networks that are already present are not purely decenralized they
+contain a central authority which stores data about user (i.e list of users present in
+the network), these type of networks can be brought down by government or any private 
+authority on legal(inappropriate) grounds and hence keeping the government on the mercy 
+of government and are not truely free.So we aim to design a network that is truely 
+distributed.
+
+In our model rather than storing the data(information about who exists on network) on 
+a centralized server we would store it in distributed manner on user(member of network) 
+nodes.
+
+The overview of concept can be explained as -
+
+	
+our app would consist of four major parts
+1)	user profile
+		it would contain the users personal information like name, address, phone no, hobbies etc
+		
+		this data would be present on the users system and on some of peers on network in encrypted 
+		fashion without their knowledge
+				this is to make sure that if someone is trying to access the data of the user that is 
+				currently not on network  he can access it from one of the copy on network with high 
+				probability.
+				this data can only be accessed by peers who have right to do so.
+		
+2)	user id
+		as soon as new profile is created app allots a new unique id to user which represents the user
+		there would be one id per user
+		multiple instances of app can have same id
+				this is to make sure user can access his account from different systems.
+				
+3)	list of peers
+		every user system will contain a list of n(a constant) peers(members of network)
+			this is to take in account pure decentralization in a distributed manner
+					this would somewhat resemble mechanism of website crawling(i.e. how links 
+					are searched on world wide web) 
+					
+4) 	encrypted data of peers
+		the user system will contain the profile information of some peers in encrypted fashion
+		without their knowledge.
+
+
+Implementation would require networking(Tcp/Ip), encryption, database management concepts. 		
